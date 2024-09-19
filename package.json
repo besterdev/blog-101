@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@conform-to/react": "^1.2.1",
+    "@conform-to/zod": "^1.2.1",
     "@kinde-oss/kinde-auth-nextjs": "^2.3.8",
     "@prisma/client": "^5.19.1",
     "@radix-ui/react-dropdown-menu": "^2.1.1",
@@ -22,7 +24,8 @@
     "react": "19.0.0-rc-f994737d14-20240522",
     "react-dom": "19.0.0-rc-f994737d14-20240522",
     "tailwind-merge": "^2.5.2",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@types/node": "^20",

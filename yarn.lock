@@ -907,6 +907,25 @@
     "@babel/helper-validator-identifier" "^7.24.7"
     to-fast-properties "^2.0.0"
 
+"@conform-to/dom@1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@conform-to/dom/-/dom-1.2.1.tgz#b64f9bb4259f05eec779152b7328cee1c51a9d8d"
+  integrity sha512-/G9LDwxqSV23a3y8hdXNhZ9ilQZAKyYgtNozGWzTNu+Y/r7P3y3qQcF3lET6qwNJAVyzt32SCoiwfriv05gXtA==
+
+"@conform-to/react@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@conform-to/react/-/react-1.2.1.tgz#938d655a2c1b0073660ae38cc339d4a5913e162f"
+  integrity sha512-eoqnfdo31n+Rmzb7R6dzPWtV62GcQOM2PnPIwTacqSRWmL3x8WPOWoQAHaWHLk6DvcGxpaD16hHA8+itrraxCw==
+  dependencies:
+    "@conform-to/dom" "1.2.1"
+
+"@conform-to/zod@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@conform-to/zod/-/zod-1.2.1.tgz#cf72dbb0c59ca591e45ede85edfdc73b1b103227"
+  integrity sha512-XpBBjTq9SYfUWqMQXy7GMjT3yk2jdIdS5MVMQOn9WO7pHZdWEGVdfZCEQy4LYnPZyz2xsF/XXbtzIi9Im05AFQ==
+  dependencies:
+    "@conform-to/dom" "1.2.1"
+
 "@emnapi/runtime@^1.2.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@emnapi/runtime/-/runtime-1.2.0.tgz#71d018546c3a91f3b51106530edbc056b9f2f2e3"
@@ -4488,3 +4507,8 @@ yocto-queue@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/yocto-queue/-/yocto-queue-0.1.0.tgz#0294eb3dee05028d31ee1a5fa2c556a6aaf10a1b"
   integrity sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==
+
+zod@^3.23.8:
+  version "3.23.8"
+  resolved "https://registry.yarnpkg.com/zod/-/zod-3.23.8.tgz#e37b957b5d52079769fb8097099b592f0ef4067d"
+  integrity sha512-XBx9AXhXktjUqnepgTiE5flcKIYWi/rme0Eaj+5Y0lftuGBq+jyRu/md4WnuxqgP1ubdpNCsYEYPxrzVHD8d6g==
