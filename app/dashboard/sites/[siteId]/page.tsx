@@ -7,10 +7,17 @@ import prisma from "@/app/utils/db"
 import { Book, PlusCircle, Settings } from "lucide-react"
 
 import Link from "next/link"
-
 import { Button } from "@/components/ui/button"
 import EmptyState from "@/app/components/dashboard/EmptyState"
-import { Card } from "@/components/ui/card"
+
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
+import { PostsTable } from "@/app/dashboard/sites/[siteId]/PostTable"
 
 const getSite = async (siteId: string, userId: string) => {
   const data = await prisma.site.findUnique({
@@ -80,7 +87,17 @@ const SitePage = async ({ params }: { params: { siteId: string } }) => {
         />
       ) : (
         <div>
-          <Card></Card>
+          <Card>
+            <CardHeader>
+              <CardTitle>Article</CardTitle>
+              <CardDescription>
+                Manage your Artcle in a simple and intuitive interface
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <PostsTable posts={site.posts ?? []} siteId={params.siteId} />
+            </CardContent>
+          </Card>
         </div>
       )}
     </>
